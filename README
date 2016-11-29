@@ -1,0 +1,5 @@
+
+
+docker build -t sscholl/test .
+
+docker run -p 127.0.0.1:5000:5000 -p 127.0.0.1:5443:5443 -d -v data:/app/data sscholl/test
